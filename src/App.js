@@ -13,7 +13,7 @@ class App extends Component {
             </div>
             <div className="col-md-4">
               <div className="js-map-navigation">
-                <a href="#" data-name="dnepropetrovskaya">test 1</a>
+                <a href="#" data-name="symskaya">test 1</a>
                 <a href="#" data-name="chernigovskaya">test 2</a>
                 <a href="#" data-name="zaporozskaya">test 3</a>
               </div>
