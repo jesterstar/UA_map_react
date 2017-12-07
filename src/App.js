@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './map.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8">
+              <object id="js-direction-map" data={logo} type="image/svg+xml"></object>
+            </div>
+            <div className="col-md-4">
+              <div className="js-map-navigation">
+                <a href="#" data-name="dnepropetrovskaya">test 1</a>
+                <a href="#" data-name="chernigovskaya">test 2</a>
+                <a href="#" data-name="zaporozskaya">test 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
