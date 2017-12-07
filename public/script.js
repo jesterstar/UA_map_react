@@ -1,8 +1,7 @@
 /**
  * Script for init map plugin
  */
-$(document).ready(function(){
-    
+$(document).ready(function(){    
     
     /**
      * Variables
@@ -17,14 +16,13 @@ $(document).ready(function(){
 			var svgDocument = mapContainer.contentDocument;
 			var svgElement = svgDocument.getElementsByClassName('st0');
 
-            console.log(svgDocument);
 			mapDirectionsItems.mouseover(function () {
 				var curName = this.getAttribute('data-name');
 
 				$(svgElement).each(function () {
 					var mapName = this;
 					if (mapName.getAttribute('data-name') == curName) {
-						this.setAttribute('class', 'st0 hover')
+						this.setAttribute('class', 'st0 hover');
 					}
 				});
 
@@ -36,7 +34,7 @@ $(document).ready(function(){
 				$(svgElement).each(function () {
 					var mapName = this;
 					if (mapName.getAttribute('data-name') == curName) {
-						this.setAttribute('class', 'st0')
+						this.setAttribute('class', 'st0');
 					}
 				});
 

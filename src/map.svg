@@ -11,7 +11,8 @@
         -o-transition: .3s ease all;
         transition: .3s ease all;
 	}
-	.st0:hover{
+	.st0:hover,
+	.st0.hover{
 		fill:#3d5ed8;
 		stroke:#FFFFFF;
 		stroke-width:5;
