@@ -1,0 +1,102 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #363739;
+}
+ul {
+  list-style-type: none;
+}
+a:hover, a:focus, a:active {
+  color: #3B77F2;
+  text-decoration: none;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+a.hover {
+  color: #3B77F2;
+  text-decoration: none;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+.popup-window {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  z-index: 50;
+  .popup-content {
+    font-size: 12px;
+    padding: 15px 20px;
+    p {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .triangle {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 125px;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    box-shadow: 3px 4px 10px -2px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+  }
+}
+.map {
+  position: relative;
+  top: 100px;
+  .js-map-navigation {
+    li {
+      margin-top: 15px;
+      a {
+        color: #363739;
+        font-weight: 600;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          color: #3B77F2;
+          text-decoration: none;
+          -webkit-transition: .3s linear;
+          -moz-transition: .3s linear;
+          -ms-transition: .3s linear;
+          -o-transition: .3s linear;
+          transition: .3s linear;
+        }
+        &.hover {
+          color: #3B77F2;
+          font-weight: bold;
+          -webkit-transition: .3s linear;
+          -moz-transition: .3s linear;
+          -ms-transition: .3s linear;
+          -o-transition: .3s linear;
+          transition: .3s linear;
+        }
+        &.clicked {
+          color: #3B77F2;
+          font-weight: bold;
+          -webkit-transition: .3s linear;
+          -moz-transition: .3s linear;
+          -ms-transition: .3s linear;
+          -o-transition: .3s linear;
+          transition: .3s linear;
+        }
+        span {
+          font-family: 'Fira Mono', monospace;
+          color: #b0bec5;
+          font-weight: 600;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
