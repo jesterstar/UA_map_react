@@ -31,7 +31,8 @@ a.hover {
   left: 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
-  z-index: 50; }
+  z-index: 50;
+  min-width: 260px !important; }
   .popup-window .popup-content {
     font-size: 12px;
     padding: 15px 20px; }
